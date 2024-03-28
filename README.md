@@ -7,3 +7,8 @@
 + 原子操作的保证问题, CPU读写数据，缓存一致性。
 
 + 互斥锁是如何实现的：内存标记线程ID、阻塞队列、硬件的原子操作、屏蔽中断、 (1.自旋 2.加入阻塞队列 3.休眠后尝试获取锁)
+
+
+## Network Buffer Design ——— 2024.3.28
++ RingBuffer: gcc ringbuffer.c .c -fPIC    gcc -shared ringbuffer.o -o libringbuffer.so -I./-L
+  
