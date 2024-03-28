@@ -10,5 +10,5 @@
 
 
 ## Network Buffer Design ——— 2024.3.28
-+ RingBuffer: gcc ringbuffer.c .c -fPIC    gcc -shared ringbuffer.o -o libringbuffer.so -I./-L
++ RingBuffer: gcc ringbuffer.c -c -fPIC    gcc -shared ringbuffer.o -o libringbuffer.so -I./-L
   
