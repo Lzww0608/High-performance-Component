@@ -13,3 +13,8 @@
 + RingBuffer: gcc ringbuffer.c -c -fPIC    gcc -shared ringbuffer.o -o libringbuffer.so -I./-L
 
 + ChainBuffer: gcc chainbuffer.c -c -fPIC    gcc -shared chainbuffer.o -o libchainbuffer.so -I./-L
+
+
+## Timers —— 2024.3.30
++ 模拟实现内核定时器
++ timers: epoll_wait()第四个参数timeout阻塞时间设置驱动定时器。 shell: gcc timers.cc -o timers -std=c++14
