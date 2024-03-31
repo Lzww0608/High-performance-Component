@@ -18,3 +18,8 @@
 ## Timers —— 2024.3.30
 + 模拟实现内核定时器
 + timers: epoll_wait()第四个参数timeout阻塞时间设置驱动定时器。 shell: g++ timers.cc -o timers -std=c++14
+
+
+## Mempol —— 2024.3.31
++ mempool_fixed_block: 块大小固定，释放时间不固定。通过二级指针构造链表实现空余块之间的链接。
++ mempool_unfixed: 块大小不固定，每次分配当前块空间不足时会构建新的块。
