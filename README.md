@@ -26,4 +26,4 @@
 
 
 ## Deadlock Detection —— 2024.4.8
-+ deadlock.c: 建立邻接图表来追踪和管理多线程中资源的使用情况并模拟线程之间的依赖关系，从而检测死锁的产生。
++ deadlock.c: 建立邻接图表来追踪和管理多线程中资源的使用情况并模拟线程之间的依赖关系，从而检测死锁的产生。shell: gcc deadlock.c -o deadlock -lpthread -ldl
