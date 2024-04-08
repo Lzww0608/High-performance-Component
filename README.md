@@ -27,3 +27,9 @@
 
 ## Deadlock Detection —— 2024.4.8
 + deadlock.c: 建立邻接图表来追踪和管理多线程中资源的使用情况并模拟线程之间的依赖关系，从而检测死锁的产生。shell: gcc deadlock.c -o deadlock -lpthread -ldl
+
+
+## Memmory_Leak —— 2024.4.8
++ memleak.c: 单文件检测内存泄漏方式(1)自定义`malloc`函数，通过打印信息 (2)`malloc`时创建文件，`free`时销毁文件，通过文件是否存在判断  并设置标志位作为启动标志
++ memleak_hook.c: 多文件检测方式，自定义hook，打印错误信息文件(缺点：文件的频繁创建与销毁)
++ shell: gcc memleak_hook.c -o memleak_hook -ldl -g  (显示泄漏代码行号): addr2line -f -e ./memleak -a `address`
