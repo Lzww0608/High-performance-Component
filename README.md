@@ -33,3 +33,9 @@
 + memleak.c: 单文件检测内存泄漏方式(1)自定义`malloc`函数，通过打印信息 (2)`malloc`时创建文件，`free`时销毁文件，通过文件是否存在判断  并设置标志位作为启动标志
 + memleak_hook.c: 多文件检测方式，自定义hook，打印错误信息文件(缺点：文件的频繁创建与销毁)
 + shell: gcc memleak_hook.c -o memleak_hook -ldl -g  (显示泄漏代码行号): addr2line -f -e ./memleak -a `address`
+
+
+## Distributed_Lock —— 2024.4.9
++ 分布式锁：互斥型、锁超时、可用性、容错性。网络通信方式进行加锁、解锁。
++ MySQL：利用MySQL唯一键的唯一约束性来实现互斥性。
++ Redis实现非公平锁：Forked From jacketzhong C++实现基于Hiredis的分布式锁
