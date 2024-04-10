@@ -39,3 +39,8 @@
 + 分布式锁：互斥型、锁超时、可用性、容错性。网络通信方式进行加锁、解锁。
 + MySQL：利用MySQL唯一键的唯一约束性来实现互斥性。
 + Redis实现非公平锁：Forked From jacketzhong C++实现基于Hiredis的分布式锁
+
+
+## Queue_Design —— 2024.4.10
++ LockedQueue: 设计有锁队列并测试(无wait()功能)。
++ ProduecerConsumerQueue: 设计有锁生产者-消费者队列并测试(有wait功能)。shell(需安装Google Test): g++ -std=c++17 -pthread test_ProducerConsumerQueue.cpp -lgtest -lgtest_main -o test
