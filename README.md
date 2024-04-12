@@ -44,4 +44,5 @@
 ## Queue_Design —— 2024.4.10
 + LockedQueue: 设计有锁队列并测试(无wait功能)。
 + ProduecerConsumerQueue: 设计有锁生产者-消费者队列并测试(有wait功能)。shell(需安装Google Test): g++ -std=c++17 -pthread test_ProducerConsumerQueue.cpp -lgtest -lgtest_main -o test
-+ msgqueue: 设计有锁消息队列并测试。 shell: g++ -std=c++ -pthread msgqueue.c test_msgqueue.cpp -o test  —— 2024.4.11
++ msgqueue: 设计有锁消息队列并测试。 shell: g++ -std=c++17 -pthread msgqueue.c test_msgqueue.cpp -o test  —— 2024.4.11
++ MPSCQueue: 利用原子操作设计无锁队列并测试。 shell: g++ -std=c++17 -pthread test_mpscqueue.cpp -o test —— 2024.4.12
