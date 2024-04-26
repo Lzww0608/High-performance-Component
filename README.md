@@ -50,3 +50,7 @@
 
 ## MySQL_pool ——— 2024.4.25
 + 基于开源软件TrinityCore中MySQL连接池部分测试MySQL连接池同步与异步连接并使用。
+
+
+## spdlog —— 2024.4.26
++ 快速异步日志方案spdlog(需提前编译安装)，编辑测试用例测试同步与异步使用方案。shell: make
