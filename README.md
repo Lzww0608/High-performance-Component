@@ -54,3 +54,7 @@
 
 ## spdlog —— 2024.4.26
 + 快速异步日志方案spdlog(需提前编译安装)，编辑测试用例测试同步与异步使用方案。shell: make
+
+
+## ProtoBuf —— 2024.4.28
++ 测试cJSON, jsoncpp, rapidjson, ProtoBuf序列化反序列化性能(10w次)
