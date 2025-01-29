@@ -35,9 +35,15 @@ bool operator < (const TimerNodeBase &lhd, const TimerNodeBase &rhd) {
 
 class Timer {
 public:
+    // 获取当前时间戳(以毫秒为单位)
+    // 使用std::chrono::steady_clock保证时钟单调递增
+    // 返回自系统启动以来的毫秒数
     static time_t GetTick() {
+        // 获取当前时间点并转换为毫秒精度
         auto sc = std::chrono::time_point_cast<std::chrono::milliseconds>(std::chrono::steady_clock::now());
+        // 将时间点转换为自epoch以来的时间间隔(毫秒)
         auto tmp = std::chrono::duration_cast<std::chrono::milliseconds>(sc.time_since_epoch());
+        // 返回毫秒计数
         return tmp.count();
     }
     //std::bind绑定对象
